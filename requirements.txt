@@ -1,6 +1,6 @@
 blinker
 click
-Flask=
+Flask
 Flask-SQLAlchemy
 itsdangerous
 Jinja2

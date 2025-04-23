@@ -14,7 +14,7 @@ A clean and modular Flask REST API boilerplate using SQLAlchemy, UUID-based user
 ## 📁 Project Structure
 
 ```
-flask-boilerplate/
+flask-api-boilerplate/
 ├── app/
 │   ├── __init__.py
 │   ├── config.py
@@ -23,10 +23,11 @@ flask-boilerplate/
 │   │   └── user.py
 │   ├── routes/
 │   │   ├── __init__.py
+|   |   ├── health_check.py
 │   │   └── user_routes.py
 │   └── services/
 │       └── user_services.py
-├── migrations/
+├── instance/app.db
 ├── .env
 ├── requirements.txt
 └── run.py
@@ -38,14 +39,14 @@ flask-boilerplate/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/flask-boilerplate.git
-cd flask-boilerplate
+git clone https://github.com/pull3t/flask-api-boilerplate.git
+cd flask-api-boilerplate
 ```
 
 ### 2. Create a Virtual Environment
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\Scripts\Activate.ps1
 ```
 
 ### 3. Install Dependencies
@@ -62,7 +63,6 @@ FLASK_ENV=development
 
 ### 5. Run the App
 ```bash
-flask db upgrade  # Initializes the SQLite database
 flask run
 ```
 
@@ -72,7 +72,7 @@ flask run
 
 ### 📍 Health Check
 ```
-GET /api/health
+GET /api/health_check
 Response: { "status": "ok", "message": "API is healthy" }
 ```
 
