@@ -51,6 +51,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\Activate.ps1
 
 ### 3. Install Dependencies
 ```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
