@@ -3,10 +3,8 @@ from flask import Flask
 from .routes import api_bp
 from .config import Config
 from dotenv import load_dotenv
-# from flask_sqlalchemy import SQLAlchemy
 from .extensions import db 
 
-# db = SQLAlchemy()
 load_dotenv() 
 
 def create_app():

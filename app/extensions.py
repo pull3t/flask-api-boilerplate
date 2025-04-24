@@ -1,4 +1,4 @@
-### --- flask-boilerplate/app/extensions.py__init__.py ---
+### --- flask-boilerplate/app/extensions.py ---
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()

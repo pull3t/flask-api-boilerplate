@@ -58,8 +58,10 @@ pip install -r requirements.txt
 ### 4. Set Up Environment Variables
 Create a `.env` file in the project root:
 ```
-SECRET_KEY=your_secret_key_here
+FLASK_APP=app:create_app
 FLASK_ENV=development
+SECRET_KEY=yB9k0u8cdRkHe_HVAsdYdFeJKYVE6M2zM4Q4NGJZ3zvA
+DATABASE_URI=sqlite:///app.db
 ```
 
 ### 5. Run the App
