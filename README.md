@@ -66,6 +66,8 @@ DATABASE_URI=sqlite:///app.db
 
 ### 5. Run the App
 ```bash
+deactivate # venv needs to be re-activated to load .env config
+source venv/bin/activate  # On Windows: venv\Scripts\Activate.ps1
 flask run
 ```
 
